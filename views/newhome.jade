@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddHome(name="addhome",method="post",action="/addhome")
+        input#inputUserAddress(type="text", placeholder="Address", name="homeaddress")
+        input#inputAgentName(type="text", placeholder="Agent Name", name="agentname")
+        input#inputHomeType(type="text", placeholder="Type", name="hometype")   
+        input#inputSize(type="text", placeholder="Size", name="homesize")
+        input#inputBedRoom(type="text", placeholder="Bed Room Number", name="bedroom")
+        input#inputBath(type="text", placeholder="Bath Room Number", name="bathroom")
+        input#inputPrice(type="text", placeholder="Price", name="homeprice")
+        button#btnSubmit(type="submit") submit

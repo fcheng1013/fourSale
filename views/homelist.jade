@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Home List
+    ul
+        each home, i in homelist
+           li
+                p #{home.homeaddress}
